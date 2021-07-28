@@ -64,10 +64,10 @@ display:flex;
 				<caption>
 					<h2>
 						<c:if test="${c != null}">
-            			Edit Course
+            			Edit Class
             		</c:if>
 						<c:if test="${c == null}">
-            			Add New Course
+            			Add New Class
             		</c:if>
 					</h2>
 				</caption>

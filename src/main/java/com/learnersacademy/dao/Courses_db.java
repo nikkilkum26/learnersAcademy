@@ -23,8 +23,7 @@ public class Courses_db {
 	private static final String SELECT_ALL_STUDENTS = "select * from courses";
 	private static final String DELETE_STUDENTS_SQL = "delete from courses where id = ?;";
 	private static final String UPDATE_STUDENTS_SQL = "update courses set course = ? where id = ?;";
-	private static final String GET_SPECIFIC_LIST_STUDENT ="select * from students where course = ?";
-	private static final String GET_SPECIFIC_LIST_COURSES ="select * from classes where courses like  % = ? %";
+
 
 	public Courses_db() {
 	}

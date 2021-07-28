@@ -83,18 +83,15 @@ public class Classes_db {
 
 	public List<Classes> selectAllSubjects() {
 
-		// using try-with-resources to avoid closing resources (boiler plate code)
+		
 		List<Classes> users = new ArrayList<>();
-		// Step 1: Establishing a Connection
+
 		try (Connection connection = getConnection();
 
-				// Step 2:Create a statement using connection object
 			PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_STUDENTS);) {
 			System.out.println(preparedStatement);
-			// Step 3: Execute the query or update query
 			ResultSet rs = preparedStatement.executeQuery();
 
-			// Step 4: Process the ResultSet object.
 			while (rs.next()) {
 				int id = rs.getInt("id");
 				String name = rs.getString("name");
